@@ -82,60 +82,60 @@ public class SikuliTestMethods extends SikuliTestMethodsBase{
 		return returnMsg;
 	}
 
-	public String click_Image(String imageFile) {
+	public String click_Image(ExcelPojoForSikuliGUI pojo) {
 		try {
-			_logger.info("Trying to Click on the element "+imageFile);
-			Pattern patternImage = new Pattern(imageFile);
+			_logger.info("Trying to Click on the element "+pojo.getImageFilepath());
+			Pattern patternImage = new Pattern(pojo.getImageFilepath());
 			fluentWait(patternImage);
 			currentScreen.click();
-			_logger.info("Successfully clicked on the element "+imageFile);
-			returnMsg = "Successfully clicked on the element "+imageFile;
+			_logger.info("Successfully clicked on the element "+pojo.getImageFilepath());
+			returnMsg = "Successfully clicked on the element "+pojo.getImageFilepath();
 		} catch (Exception pe) {
-			_logger.error("Error occured while clicking on the element "+imageFile + " because " + pe.toString());
-			throw new RuntimeException("Error occured while clicking on the element "+imageFile + " because " + pe.toString());
+			_logger.error("Error occured while clicking on the element "+pojo.getImageFilepath() + " because " + pe.toString());
+			throw new RuntimeException("Error occured while clicking on the element "+pojo.getImageFilepath() + " because " + pe.toString());
 		}
 		return returnMsg;
 	}
 	
-	public String select_Dropdown(String imageFile) {
+	public String select_Dropdown(ExcelPojoForSikuliGUI pojo) {
 		try {
-			_logger.info("Trying to Click on the element "+imageFile);
-			Pattern patternImage = new Pattern(imageFile);
+			_logger.info("Trying to Click on the element "+pojo.getImageFilepath());
+			Pattern patternImage = new Pattern(pojo.getImageFilepath());
 			fluentWait(patternImage);
 			currentScreen.click();
 			currentScreen.type(Key.DOWN);
 			currentScreen.type(Key.TAB);
-			_logger.info("Successfully clicked on the element "+imageFile);
-			returnMsg = "Successfully clicked on the element "+imageFile;
+			_logger.info("Successfully clicked on the element "+pojo.getImageFilepath());
+			returnMsg = "Successfully clicked on the element "+pojo.getImageFilepath();
 		} catch (Exception pe) {
-			_logger.error("Error occured while clicking on the element "+imageFile + " because " + pe.toString());
-			throw new RuntimeException("Error occured while clicking on the element "+imageFile + " because " + pe.toString());
+			_logger.error("Error occured while clicking on the element "+pojo.getImageFilepath() + " because " + pe.toString());
+			throw new RuntimeException("Error occured while clicking on the element "+pojo.getImageFilepath() + " because " + pe.toString());
 		}
 		return returnMsg;
 	}
 
-	public String enter_Text(String imageFile,String inputText) {
+	public String enter_Text(ExcelPojoForSikuliGUI pojo) {
 		try {
-			_logger.info("Trying to enter the Input "+inputText);
-			Pattern patternImage = new Pattern(imageFile);
+			_logger.info("Trying to enter the Input "+pojo.getInput());
+			Pattern patternImage = new Pattern(pojo.getImageFilepath());
 			fluentWait(patternImage);
 			currentScreen.click();
 			currentScreen.type("a", KeyModifier.CTRL);
 			currentScreen.type(Key.BACKSPACE);
-			currentScreen.type(inputText);
-			_logger.info("Successfully entered the Input "+inputText);
-			returnMsg = "Successfully entered input in " + imageFile + " as "	+ inputText;
+			currentScreen.type(pojo.getInput());
+			_logger.info("Successfully entered the Input "+pojo.getInput());
+			returnMsg = "Successfully entered input in " + pojo.getImageFilepath() + " as "	+ pojo.getInput();
 		} catch (Exception pe) {
-			_logger.error("Error occured while writing input to "+ imageFile + " because " + pe.toString());
-			throw new RuntimeException("Error occured while writing input to "+ imageFile + " because " + pe.toString());
+			_logger.error("Error occured while writing input to "+ pojo.getImageFilepath() + " because " + pe.toString());
+			throw new RuntimeException("Error occured while writing input to "+ pojo.getImageFilepath() + " because " + pe.toString());
 		}
 		return returnMsg;
 	}
 
-	public String verify_Image(String imageFile) {
+	public String verify_Image(ExcelPojoForSikuliGUI pojo) {
 		try {
 			_logger.info("Trying to verify whether object exists on webpage or not ");
-			Pattern patternImage = new Pattern(imageFile);
+			Pattern patternImage = new Pattern(pojo.getImageFilepath());
 			fluentWait(patternImage);
 			assert(currentScreen.exists(patternImage)!=null);
 			_logger.info("Successfully verified object exists on the web page");

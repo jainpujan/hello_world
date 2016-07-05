@@ -1,25 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="0" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="153205" started-at="2016-06-09T14:54:16Z" finished-at="2016-06-09T14:56:49Z">
+  <suite name="Suite" duration-ms="45877" started-at="2016-07-05T05:40:47Z" finished-at="2016-07-05T05:41:33Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="153205" started-at="2016-06-09T14:54:16Z" finished-at="2016-06-09T14:56:49Z">
+    <test name="Test" duration-ms="45877" started-at="2016-07-05T05:40:47Z" finished-at="2016-07-05T05:41:33Z">
       <class name="com.calsoft.nexenta.vcp.SikuliTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.calsoft.nexenta.vcp.SikuliTest@636d9fe1]" name="setUp" is-config="true" duration-ms="76861" started-at="2016-06-09T20:24:16Z" finished-at="2016-06-09T20:25:33Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.calsoft.nexenta.vcp.SikuliTest@478afc05]" name="setUp" is-config="true" duration-ms="44259" started-at="2016-07-05T11:10:47Z" finished-at="2016-07-05T11:11:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testLogo()[pri:0, instance:com.calsoft.nexenta.vcp.SikuliTest@636d9fe1]" name="testLogo" duration-ms="59042" started-at="2016-06-09T20:25:33Z" finished-at="2016-06-09T20:26:32Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testLogo -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.calsoft.nexenta.vcp.SikuliTest@636d9fe1]" name="tearDown" is-config="true" duration-ms="17234" started-at="2016-06-09T20:26:32Z" finished-at="2016-06-09T20:26:49Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.calsoft.nexenta.vcp.SikuliTest@478afc05]" name="tearDown" is-config="true" duration-ms="1597" started-at="2016-07-05T11:11:32Z" finished-at="2016-07-05T11:11:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.calsoft.nexenta.vcp.SikuliTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
