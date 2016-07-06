@@ -12,13 +12,12 @@ import org.sikuli.script.Screen;
 
 public class SikuliTestBase {
 
-	protected static String contextResourceDir=	System.getProperty("user.dir")+ "/src/test/resources/Images/";
 	protected static String inputFilePathForTestCase=	System.getProperty("user.dir")+ "/src/test/resources/TestCase/";
 	protected static String inputFilePathForDriver=	System.getProperty("user.dir")+ "/src/test/resources/Driver/";
 	protected Screen m_screen;  
 	WebDriver driver ;
 	SikuliTestMethods _sikuliestMethods = new SikuliTestMethods();
-	Map<Integer, ExcelPojoForSikuliGUI> actionItemListForDriver;
+	protected static Map<Integer, ExcelPojoForSikuliGUI> actionItemListForDriver;
 	Map<Integer, List<ExcelPojoForSikuliGUI>> actionItemListForTestCase;
 	ExcelReadingUtilityForSikuli _excelReadingUtilityForSikuli = new ExcelReadingUtilityForSikuli();
 
