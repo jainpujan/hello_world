@@ -1,28 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="351569" started-at="2016-07-06T06:41:59Z" finished-at="2016-07-06T06:47:51Z">
+  <suite name="Suite" duration-ms="96689" started-at="2016-07-06T12:09:50Z" finished-at="2016-07-06T12:11:27Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="351569" started-at="2016-07-06T06:41:59Z" finished-at="2016-07-06T06:47:51Z">
+    <test name="Test" duration-ms="96689" started-at="2016-07-06T12:09:50Z" finished-at="2016-07-06T12:11:27Z">
       <class name="com.calsoft.nexenta.vcp.SikuliTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.calsoft.nexenta.vcp.SikuliTest@4973268]" name="setUp" is-config="true" duration-ms="129598" started-at="2016-07-06T12:11:59Z" finished-at="2016-07-06T12:14:09Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.calsoft.nexenta.vcp.SikuliTest@4557e63a]" name="setUp" is-config="true" duration-ms="49348" started-at="2016-07-06T17:39:50Z" finished-at="2016-07-06T17:40:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testVCP()[pri:0, instance:com.calsoft.nexenta.vcp.SikuliTest@4973268]" name="testVCP" duration-ms="221950" started-at="2016-07-06T12:14:09Z" finished-at="2016-07-06T12:17:51Z">
+        <test-method status="PASS" signature="testVCP()[pri:0, instance:com.calsoft.nexenta.vcp.SikuliTest@4557e63a]" name="testVCP" duration-ms="46174" started-at="2016-07-06T17:40:40Z" finished-at="2016-07-06T17:41:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testVCP -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.calsoft.nexenta.vcp.SikuliTest@4973268]" name="tearDown" is-config="true" duration-ms="0" started-at="2016-07-06T12:17:51Z" finished-at="2016-07-06T12:17:51Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.calsoft.nexenta.vcp.SikuliTest@4557e63a]" name="tearDown" is-config="true" duration-ms="1135" started-at="2016-07-06T17:41:26Z" finished-at="2016-07-06T17:41:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="testVCP()[pri:0, instance:com.calsoft.nexenta.vcp.SikuliTest@4973268]" name="testVCP" duration-ms="0" started-at="2016-07-06T12:17:51Z" finished-at="2016-07-06T12:17:51Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testVCP -->
       </class> <!-- com.calsoft.nexenta.vcp.SikuliTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->

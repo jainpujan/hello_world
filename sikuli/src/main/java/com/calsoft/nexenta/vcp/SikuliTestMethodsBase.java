@@ -14,6 +14,6 @@ public class SikuliTestMethodsBase {
 	Screen currentScreen;
 	protected static String returnMsg;
 	protected static String contextResourceDir=	System.getProperty("user.dir")+ "/src/test/resources/Images/";
-	protected static String _contextLocationForDriver = "E:/Nexenta/updated_Source/SourceTree/F-TAF_Tests_5.0/tests-5.0/src/test/resources/Fusion/Driver";
+	protected static String _contextLocationForDriver = System.getProperty("user.dir")+ "/src/test/resources/Driver";
 
 }

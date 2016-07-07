@@ -58,7 +58,7 @@ public class SikuliTestMethods extends SikuliTestMethodsBase{
 				break;
 			}
 			wdw = new WebDriverWait(driver, 60);
-			driver.manage().window().maximize();
+//			driver.manage().window().maximize();
 			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		}catch (Exception e){
 			_logger.error("Unable to open Browser due to - "+e.getMessage());
@@ -132,6 +132,41 @@ public class SikuliTestMethods extends SikuliTestMethodsBase{
 		}
 		return returnMsg;
 	}
+	
+	public String enter_Integer(List<ExcelPojoForSikuliGUI>listOfPojos) {
+		try {
+			_logger.info("Trying to enter the Input "+listOfPojos.get(0).getInput());
+			Pattern patternImage = new Pattern(contextResourceDir+listOfPojos.get(0).getImageFilepath());
+			fluentWait(patternImage);
+			currentScreen.click();
+			currentScreen.type("a", KeyModifier.CTRL);
+			currentScreen.type(Key.BACKSPACE);
+//			String text = Long.toString(Math.round(Math.floor(Float.parseFloat(listOfPojos.get(0).getInput()))));
+			String text="";
+			/*try{
+			 text =listOfPojos.get(0).getInput().split("\\.")[0];
+			}
+			catch(Exception e){
+				text=listOfPojos.get(0).getInput();
+			}*/
+			currentScreen.type("8457");
+			_logger.info("Successfully entered the Input "+contextResourceDir+listOfPojos.get(0).getInput());
+			returnMsg = "Successfully entered input in " + contextResourceDir+listOfPojos.get(0).getImageFilepath() + " as "	+ listOfPojos.get(0).getInput();
+		} catch (Exception pe) {
+			_logger.error("Error occured while writing input to "+ contextResourceDir+listOfPojos.get(0).getImageFilepath() + " because " + pe.toString());
+			throw new RuntimeException("Error occured while writing input to "+ contextResourceDir+listOfPojos.get(0).getImageFilepath() + " because " + pe.toString());
+		}
+		return returnMsg;
+	}
+	
+	/*public static void main(String[] args) {
+		String s1="8457.0";
+//		Float i= Float.valueOf(s1);
+		
+//		String s2= String.valueOf(i);
+		String [] s3= s1.trim().split("\\.");
+		System.out.println(s3[0]);
+	}*/
 
 	public String verify_Image(List<ExcelPojoForSikuliGUI>listOfPojos) {
 		try {
