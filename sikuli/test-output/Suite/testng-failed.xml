@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]">
+<suite name="Failed suite [Suite]" parallel="none">
   <listeners>
     <listener class-name="com.calsoft.nexenta.vcp.SikuliTest"/>
   </listeners>
-  <test name="Test(failed)">
+  <test name="Test(failed)" parallel="none">
     <classes>
       <class name="com.calsoft.nexenta.vcp.SikuliTest">
         <methods>
           <include name="setUp"/>
           <include name="testVCP"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.calsoft.nexenta.vcp.SikuliTest -->
     </classes>

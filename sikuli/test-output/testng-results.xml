@@ -1,21 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="1" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="96689" started-at="2016-07-06T12:09:50Z" finished-at="2016-07-06T12:11:27Z">
+  <suite name="Suite" duration-ms="118982" started-at="2016-07-20T11:28:54Z" finished-at="2016-07-20T11:30:53Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="96689" started-at="2016-07-06T12:09:50Z" finished-at="2016-07-06T12:11:27Z">
+    <test name="Test" duration-ms="118982" started-at="2016-07-20T11:28:54Z" finished-at="2016-07-20T11:30:53Z">
       <class name="com.calsoft.nexenta.vcp.SikuliTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.calsoft.nexenta.vcp.SikuliTest@4557e63a]" name="setUp" is-config="true" duration-ms="49348" started-at="2016-07-06T17:39:50Z" finished-at="2016-07-06T17:40:40Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.calsoft.nexenta.vcp.SikuliTest@dcc0d67]" name="setUp" is-config="true" duration-ms="40712" started-at="2016-07-20T16:58:54Z" finished-at="2016-07-20T16:59:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testVCP()[pri:0, instance:com.calsoft.nexenta.vcp.SikuliTest@4557e63a]" name="testVCP" duration-ms="46174" started-at="2016-07-06T17:40:40Z" finished-at="2016-07-06T17:41:26Z">
+        <test-method status="PASS" signature="testVCP()[pri:0, instance:com.calsoft.nexenta.vcp.SikuliTest@dcc0d67]" name="testVCP" duration-ms="67225" started-at="2016-07-20T16:59:34Z" finished-at="2016-07-20T17:00:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testVCP -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.calsoft.nexenta.vcp.SikuliTest@4557e63a]" name="tearDown" is-config="true" duration-ms="1135" started-at="2016-07-06T17:41:26Z" finished-at="2016-07-06T17:41:27Z">
+        <test-method status="FAIL" signature="testVCP()[pri:0, instance:com.calsoft.nexenta.vcp.SikuliTest@dcc0d67]" name="testVCP" duration-ms="9786" started-at="2016-07-20T17:00:42Z" finished-at="2016-07-20T17:00:51Z">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.lang.reflect.InvocationTargetException]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at com.calsoft.nexenta.vcp.SikuliTestBase.handleException(SikuliTestBase.java:44)
+	at com.calsoft.nexenta.vcp.SikuliTestBase.invokeMethodsInSequence(SikuliTestBase.java:36)
+	at com.calsoft.nexenta.vcp.SikuliTestBase.invokeMethod(SikuliTestBase.java:26)
+	at com.calsoft.nexenta.vcp.SikuliTest.testVCP(SikuliTest.java:72)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.calsoft.nexenta.vcp.SikuliTestBase.invokeMethodsInSequence(SikuliTestBase.java:33)
+	... 26 more
+Caused by: java.lang.RuntimeException: Error occured while clicking on the element E:\Nexenta\updated_Source\SourceTree\Sikuli_Gui\sikuli/src/test/resources/Images/TestImages/AddNexentaConfig1.PNG because java.lang.RuntimeException: Expected image not found
+	at com.calsoft.nexenta.vcp.SikuliTestMethods.click_Image(SikuliTestMethods.java:97)
+	... 31 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testVCP -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.calsoft.nexenta.vcp.SikuliTest@dcc0d67]" name="tearDown" is-config="true" duration-ms="1211" started-at="2016-07-20T17:00:51Z" finished-at="2016-07-20T17:00:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

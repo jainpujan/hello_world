@@ -6,7 +6,8 @@
       <class name="com.calsoft.nexenta.vcp.SikuliTest">
         <methods>
           <include name="setUp"/>
-          <include name="testLogo"/>
+          <include name="testVCP"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.calsoft.nexenta.vcp.SikuliTest -->
     </classes>

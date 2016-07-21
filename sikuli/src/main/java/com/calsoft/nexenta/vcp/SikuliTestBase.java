@@ -26,7 +26,6 @@ public class SikuliTestBase {
 		return invokeMethodsInSequence(object, method, new LinkedList<Object[]>() {{ add(args); }} );
 	}
 
-
 	protected static Object invokeMethodsInSequence(final Object object, final Method method, final LinkedList<Object[]> listOfArgs) {
 		Object returnValue = null;
 		try {
@@ -40,13 +39,9 @@ public class SikuliTestBase {
 	}
 
 	private static void handleException(Throwable exception) {
-		if (exception instanceof InvocationTargetException) {
-			Throwable cause = exception.getCause();
-			System.out.println(cause);
-			throw new RuntimeException(exception);
-		} else if (exception != null) {
-			throw new RuntimeException("Failed to invoke method.", exception);
-		}
+		Throwable cause = exception.getCause();
+		System.out.println(cause);
+		throw new RuntimeException(exception);
 	}
 
 }
